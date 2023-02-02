@@ -3,14 +3,17 @@
 <head>
     <title>WEB1-JavaScrpit</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1><a href="index.html">WEB</a></h1>
+    <h1><a href="index.html" style="color:blue">WEB</a></h1>
+    <div id="grid">
     <ol>
         <li><a href="1.html">HTML</a></li>
         <li><a href="2.html">CSS</a></li>
         <li><a href="3.html">JavaScript</a></li>
     </ol>
+    <div id="article">
     <h2>JavaScript</h2>
    <p>
     JavaScript , often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, 
@@ -19,5 +22,34 @@
     All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
     JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[10] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).
    </p>
+   <input type="button" value="night" onclick="
+        var target=document.querySelector('body');
+        if(this.value==='night'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value='day';
+            var alist=document.querySelectorAll('a');
+            var i=0;
+            while(i<alist.length){
+                alist[i].style.color='powderblue';
+                i+=1;
+            }
+        }
+        else{
+            target.style.color='black';
+            target.style.backgroundColor='white';
+            this.value='night';
+            var alist=document.querySelectorAll('a');
+            var i=0;
+            while(i<alist.length){
+                console.log(alist[i]);
+                alist[i].style.color='blue';
+                i+=1;
+            }
+        }
+        ">
+        
+    </div>
+    </div> 
 </body>
 </html>
