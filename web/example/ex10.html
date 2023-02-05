@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        function sum(left,right){
+            document.write(left+right+'<br>');
+        }
+        function sumcolorred(left,right){
+            document.write('<div style="color:red">'
+                +left+right+'</div><br>');
+        }
+        sum(2,3);
+        sumcolorred(2,3);
+    </script>
+    <h1>Return</h1>
+    <script>
+        function sum2(left,right){
+            return left+right;
+        }
+        document.write(sum2(2,3)+'<br>');
+        document.write('<div style="color:red">'+sum2(2,3)+'</div>');
+        document.write('<div style="font-size:3rem">'+sum2(2,3)+'</div>');
+    </script>
+    
+</body>
+</html>

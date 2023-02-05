@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+        var coworkers={
+            "programmer":"cha",
+            "designer":"hyun"
+        };
+        document.write("programmer:"+coworkers.programmer+'<br>');
+        document.write("designer:"+coworkers.designer+'<br>');
+        coworkers.bookkepper="soo";
+        document.write("bookkepper:"+coworkers.bookkepper+'<br>');
+        coworkers["data scientist"]="harry";
+        document.write("data scientist:"+coworkers["data scientist"]+'<br>');
+    </script>
+    <h2>Iterate</h2>
+    <script>
+        for(var key in coworkers){ //객체 데이터 순회
+            //document.write(key+'<br>');
+            //document.write(coworkers[key]+'<br>');
+            document.write(key+' : '+coworkers[key]+'<br>');
+        }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+        coworkers.showAll=function(){
+            for(var key in this){
+                if(key!="showAll")
+            document.write(key+' : '+this[key]+'<br>');
+        }
+    }
+    coworkers.showAll();s
+    </script>
+    
+
+
+
+</body>
+</html>
+
+
+
+
